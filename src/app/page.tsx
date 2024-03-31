@@ -1,7 +1,6 @@
-"use client";
 import ECommerce from "@/components/Dashboard/E-commerce";
 import DefaultLayout from "@/components/Layouts/DefaultLayout";
-// import MetamaskConnect from "@/components/MetamaskConnect";
+import MetamaskConnect from "@/components/MetamaskConnect";
 
 export default function Home() {
   return (
@@ -13,7 +12,7 @@ export default function Home() {
               Welcome to Dashboard{" "}
             </h5>
           </div>
-          {/* <MetamaskConnect />{" "} */}
+          <MetamaskConnect />{" "}
         </div>
         <ECommerce />
       </DefaultLayout>

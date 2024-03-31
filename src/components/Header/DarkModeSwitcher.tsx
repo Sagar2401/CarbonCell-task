@@ -1,17 +1,9 @@
-// import useColorMode from "@/hooks/useColorMode";
 "use client";
+import useColorMode from "@/hooks/useColorMode";
 import { useEffect, useState } from "react";
 
 const DarkModeSwitcher = () => {
-  const [colorMode, setColorMode] = useState("light");
-  useEffect(() => {
-    const className = "dark";
-    const bodyClass = window.document.body.classList;
-
-    colorMode === "dark"
-      ? bodyClass.add(className)
-      : bodyClass.remove(className);
-  }, [colorMode]);
+  const [colorMode, setColorMode] = useColorMode();
 
   return (
     <li>
